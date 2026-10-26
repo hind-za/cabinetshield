@@ -1,0 +1,12 @@
+622c622
+<   - interface: eth0
+---
+>   - interface: dummy0
+2196c2196
+< default-rule-path: /var/lib/suricata/rules
+---
+> default-rule-path: /etc/suricata/rules
+2199c2199
+<   - suricata.rules
+---
+>   - local.rules

@@ -1,0 +1,4 @@
+# CabinetShield : règles de test (laboratoire, trafic synthétique)
+alert icmp any any -> $HOME_NET any (msg:"CABINETSHIELD TEST Ping informatif"; itype:8; classtype:not-suspicious; sid:1000001; rev:1;)
+alert tcp any any -> $HOME_NET 22 (msg:"CABINETSHIELD TEST Tentatives SSH repetees"; flags:S; threshold:type threshold, track by_src, count 5, seconds 10; classtype:attempted-recon; sid:1000002; rev:1;)
+alert tcp $HOME_NET any -> any 4444 (msg:"CABINETSHIELD TEST Connexion sortante suspecte"; flags:S; classtype:trojan-activity; sid:1000003; rev:1;)
