@@ -1,0 +1,5 @@
+13.7
+Python 3.13.5
+This is Suricata version 7.0.10 RELEASE
+3.46.1 2024-08-13 09:16:08 c9c2ab54ba1f5f46360f1b4f35d849cd3f080e6fc2b6c60e91b16c63f69aalt1 (64-bit)
+git version 2.47.3
